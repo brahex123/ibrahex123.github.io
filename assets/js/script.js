@@ -37,16 +37,14 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
-    // <!-- emailjs to mail contact form data -->
-// Initialize EmailJS with your Public Key
 emailjs.init({
-    publicKey: 'JKphslVuKdHW-l7oi'
+    publicKey: 'mFFf6rVBltk8xYYab'
   });
   
   document.getElementById("contact-form").addEventListener("submit", function(event) {
       event.preventDefault();
   
-      emailjs.sendForm('service_4cj8bd6', 'template_pjprnc5', this)
+      emailjs.sendForm('service_fte7loi', 'template_b8wk0g5', this)
           .then(function(response) {
               console.log('SUCCESS!', response.status, response.text);
               document.getElementById("contact-form").reset();
@@ -76,93 +74,100 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Bigdata Technologies", "Generative AI", "ML, Deep Learning & NLP"],
+    strings: [
+  "Scalable AI & Data Systems","Applied Machine Learning Research","Distributed Intelligence & Real-Time Inference","ML, Deep Learning & Scientific Computing","Advance Data Pipelines Architecture"],
     loop: true,
-    typeSpeed: 50,
+    typeSpeed: 80,
     backSpeed: 25,
-    backDelay: 500,
+    backDelay: 100,
 });
 // <!-- typed js effect ends -->
 
 // Dummy data: Replace this with your JSON or fetch call
 const projects = [
-    {
-        name: "Churn Model",
-        desc: "Customer churn is a significant issue for many businesses, and predicting churn can help companies take preventive actions. This project provides a web-based platform for predicting customer churn using a machine learning model. The platform is built using Streamlit, a popular Python framework for creating web applications with ease.",
-        image: "A Smarter Way To Reduce Customer Churn", 
-        codeLink: "https://github.com/brahex123/ChurnModel"
-    },
-    {
-        name: "Credit-Card-Clustering",
-        desc: "Clustering credit cards is a data-driven technique used to group credit card customers into different segments based on their spending behavior, demographic information, or financial attributes. This is typically done to identify distinct customer profiles, tailor marketing strategies, manage risk, or optimize credit card offers.",
-        image: "Banking card design",
-        codeLink: "https://github.com/brahex123/Credit-Card-Clustering"
-    },
-    {
-        name: "AI VS Human",
-        desc: "Detecting AI-generated content involves building a machine learning model that classifies text data. This project demonstrates expertise in handling imbalanced datasets, implementing robust classification models, and using both traditional machine learning techniques and deep learning frameworks to achieve accurate detection.",
-        image: "AI VS HUMAN",
-        codeLink: "https://github.com/brahex123/Ai-vs-Human"
-    },
-    {
-        name: "Impact of Activities on Academic Performance",
-        desc: "This project investigates the effect of extracurricular activities on students' academic performance through data analysis and visualization. The study explores how students manage time between activities and academics. This project demonstrates my ability to collect, analyze, and interpret survey data using visualizations and statistical techniques.",
-        image: "data",
-        codeLink: "https://github.com/brahex123/ProjetIntegrer"
-    },
-    {
-        name: "Face Landmarks Detection",
-        desc: "This project focuses on detecting key facial landmarks, such as eyes, nose, mouth, and jawline, using CV and ML techniques. Applications include facial recognition, emotion analysis, augmented reality filters, and improving human-computer interaction. It demonstrates proficiency in leveraging AI for real-time facial feature analysis and tracking.",
-        image: "landmarks",
-        codeLink: "https://github.com/brahex123/FaceLandmarkDetection-Resnet"
-    },
-    {
-        name: "Amazon Recommendation System",
-        desc: "This project demonstrates how to build a recommendation system for Amazon-style product recommendations using Python. The system provides personalized recommendations based on product similarity and review scores, leveraging collaborative filtering techniques with minimal dependencies. Plus Fast API",
-        image: "recomendation",
-        codeLink: "https://github.com/brahex123/Amzon-RecSys"
-    }
-  ];
-  
-  // Function to display the projects
-function displayProjects() {
-    const projectContainer = document.querySelector('.project-container');
-    let projectHTML = '';
-
-projects.forEach(project => {
-    projectHTML += `
-        <div class="project-box">
-         <img src="./assets/images/projects/${project.image}.png" alt="${project.name}">
-          <div class="content">
-            <h3>${project.name}</h3>
-            <p>${project.desc}</p>
-            <div class="btns">
-              <a href="${project.codeLink}" target="_blank" class="btn">View Code</a>
-            </div>
-          </div>
-        </div>
-      `;
-    });
-  
-    projectContainer.innerHTML = projectHTML;
+  {
+    name: "🧠 R&D – Multitask Learning for Low-Resource Arabic Dialects",
+    desc: "This research-focused project explored multitask learning (MTL) techniques for handling various NLP tasks in Arabic dialects, including machine translation, sentiment classification, and diacritization. Implemented a shared-encoder transformer architecture with hierarchical heads and multi-objective optimization. Results showed strong gains over single-task baselines, including a 58% BLEU improvement and 16-point classification accuracy increase. The study contributed to underrepresented language modeling and was co-supervised by academic researchers.",
+    image: "./assets/images/projects/data.png",
+    codeLink: "https://github.com/STALPHA2708/Arabic-Dialects-MTL"
+  },
+  {
+    name: "🤖 Ai-vs-Human – Detecting AI-Generated Text",
+    desc: "This project investigates whether text was written by a human or AI using machine learning classifiers (Logistic Regression, MLP, XGBoost). It includes evaluation tools and prediction outputs for real-world use cases.",
+    image: "./assets/images/projects/data.png",
+    codeLink: "https://github.com/STALPHA2708/PPE-Detection"
+  },
+  {
+    name: "NLP_PROJECT – AI Text Classification Web App",
+    desc: "This project delivers a web-based interface that classifies whether a text was generated by a human or an AI. It uses an XGBoost model with TF-IDF features and is deployed using Flask for easy access and interaction.",
+    image: "./assets/images/projects/data.png",
+    codeLink: "https://github.com/STALPHA2708/Darija-Translation"
+  },
+  {
+    name: "💳 CreditCardSegmentation – Client Segmentation with K-Means Clustering",
+    desc: "This project segments credit card clients based on transaction behavior using K-Means clustering and PCA. It helps uncover behavioral groups for improved targeting and decision-making in finance and marketing.",
+    image: "./assets/images/projects/data.png",
+    codeLink: "https://github.com/STALPHA2708/Cancer-Sentiment-NLP"
+  },
+  {
+    name: "ELK-based Server Log Visualization",
+    desc: "Created a pipeline using Elasticsearch, Logstash, Kibana, and PostgreSQL to analyze and visualize system logs in real time. Designed for anomaly detection and DevOps support.",
+    image: "./assets/images/projects/data.png",
+    codeLink: "https://github.com/STALPHA2708/ELK-Log-Pipeline"
+  },
+  {
+    name: "🧠 ArabicaQA – Arabic Question Answering with a Fine-Tuned Language Model",
+    desc: "ArabicaQA is an interactive Arabic Question Answering app built using a fine-tuned causal language model and deployed with Gradio. Users can input any Arabic question, and the model returns a relevant answer in real time.",
+    image: "./assets/images/projects/data.png",
+    codeLink: "https://github.com/STALPHA2708/Twitter-Sentiment"
+  },
+  {
+    name: "AI-Based Academic Plagiarism Detection",
+    desc: "Built a plagiarism detection system using TF-IDF, SVM, and Random Forest to detect non-obvious similarity across academic submissions. Included multilingual support and visual feedback.",
+    image: "./assets/images/projects/data.png",
+    codeLink: "https://github.com/STALPHA2708/AI-Plagiarism-Detector"
   }
+];
+
+
+function displayCardStack() {
+  const container = document.querySelector('.card-stack');
+  container.innerHTML = '';
+
+  projects.forEach((project, index) => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    if (index === 0) card.classList.add('active');
+
+    card.innerHTML = `
+      <img src="${project.image}" alt="${project.name}">
+      <h3>${project.name}</h3>
+      <p>${project.desc}</p>
+      <a href="${project.codeLink}" target="_blank" class="btn">View Code</a>
+    `;
+
+    card.addEventListener('click', () => {
+  card.classList.remove('active');
+  const next = card.nextElementSibling;
+
+  if (next && next.classList.contains('card')) {
+    next.classList.add('active');
+  } else {
+    // If no next card, restart from the first
+    const first = document.querySelector('.card-stack .card:first-child');
+    if (first) first.classList.add('active');
+  }
+});
+
+
+    container.appendChild(card);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', displayCardStack);
+
   
-  // Call the function to display projects on page load
-document.addEventListener('DOMContentLoaded', displayProjects);
-  
 
-
-// pre loader start
-// function loader() {
-//     document.querySelector('.loader-container').classList.add('fade-out');
-// }
-// function fadeOut() {
-//     setInterval(loader, 500);
-// }
-// window.onload = fadeOut;
-// pre loader end
-
-// disable developer mode
 document.onkeydown = function (e) {
     if (e.keyCode == 123) {
         return false;
@@ -181,66 +186,13 @@ document.onkeydown = function (e) {
     }
 }
 
-// // Start of Tawk.to Live Chat
-// var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-// (function () {
-//     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-//     s1.async = true;
-//     s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
-//     s1.charset = 'UTF-8';
-//     s1.setAttribute('crossorigin', '*');
-//     s0.parentNode.insertBefore(s1, s0);
-// })();
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('theme-toggle');
+  const icon = document.getElementById('theme-icon');
+  const body = document.body;
 
-
-
-/* ===== SCROLL REVEAL ANIMATION ===== */
-// // Call the function to display projects on page load
-// document.addEventListener('DOMContentLoaded', displayProjects);
-
-// // ScrollReveal (optional)
-// const srtop = ScrollReveal({
-//   origin: 'bottom',
-//   distance: '50px',
-//   duration: 1000,
-//   reset: true
-// });
-
-// /* SCROLL HOME */
-// srtop.reveal('.home .content h3', { delay: 100 });
-// srtop.reveal('.home .content p', { delay: 100 });
-// srtop.reveal('.home .content .btn', { delay: 100 });
-
-// srtop.reveal('.home .image', { delay: 400 });
-// srtop.reveal('.home .linkedin', { interval: 600 });
-// srtop.reveal('.home .github', { interval: 800 });
-// srtop.reveal('.home .twitter', { interval: 1000 });
-// srtop.reveal('.home .telegram', { interval: 600 });
-// srtop.reveal('.home .instagram', { interval: 600 });
-// srtop.reveal('.home .dev', { interval: 600 });
-
-// /* SCROLL ABOUT */
-// srtop.reveal('.about .content h3', { delay: 200 });
-// srtop.reveal('.about .content .tag', { delay: 200 });
-// srtop.reveal('.about .content p', { delay: 200 });
-// srtop.reveal('.about .content .box-container', { delay: 200 });
-// srtop.reveal('.about .content .resumebtn', { delay: 200 });
-
-
-// /* SCROLL SKILLS */
-// srtop.reveal('.skills .container', { interval: 200 });
-// srtop.reveal('.skills .container .bar', { delay: 400 });
-
-// /* SCROLL EDUCATION */
-// srtop.reveal('.education .box', { interval: 200 });
-
-// /* SCROLL PROJECTS */
-// srtop.reveal('.project-box', { interval: 200 });
-
-// /* SCROLL EXPERIENCE */
-// srtop.reveal('.experience .timeline', { delay: 400 });
-// srtop.reveal('.experience .timeline .container', { interval: 400 });
-
-// /* SCROLL CONTACT */
-// srtop.reveal('.contact .container', { delay: 400 });
-// srtop.reveal('.contact .container .form-group', { delay: 400 });
+  toggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    icon.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌙';
+  });
+});
