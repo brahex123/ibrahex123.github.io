@@ -16,14 +16,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
     <link id='favicon' rel="shortcut icon" href="./assets/images/ibra3.jpg" type="image/x-png">
-    <title>Portfolio | Ibrahim MECHOUAT</title>
+    <title>Portfolio | brahim MECHOUAT</title>
 </head>
 <body oncontextmenu="return false">
-
-<!-- pre loader -->
-<!-- <div class="loader-container">
-  <img draggable="false" src="./assets/images/preloader.gif" alt="">
-</div> -->
 
 <!-- navbar starts -->
 <header>
@@ -40,6 +35,8 @@
             <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+  <span id="theme-icon">🌙</span>
 </header>
 <!-- navbar ends -->
 
@@ -49,7 +46,7 @@
     <div id="particles-js"></div>
 
     <div class="content">
-    <h2>Hi There,<br/> I'm Ibrahim<span> MECHOUAT</span></h2>
+    <h2>Hi There,<br/> I'm Brahim<span> MECHAOUAT</span></h2>
     <p>i am into <span class="typing-text"></span></p>
     <a href="#about" class="btn"><span>About Me</span>
       <i class="fas fa-arrow-circle-down"></i>
@@ -78,55 +75,63 @@
     </div>
     <div class="content">
         <h3>I'm Ibrahim MECHOUAT</h3>
-        <span class="tag">Big Data and AI Engineer</span>
+        <span class="tag">AI & Big Data Engineering Student | Aspiring Researcher in Scalable Intelligent Systems</span>
         
         <p>
-          Enthusiastic Big Data and AI Engineering student skilled in data analysis,
-           machine learning, and software development. Proven experience in leading data-focused projects,
-            building predictive models, and optimizing data workflows.
-             Eager to leverage technical expertise and project-based 
-             insights to drive impactful contributions in data engineering and support innovative solutions within the tech industry. </p>
+          Aspiring researcher in Artificial Intelligence, passionate about exploring advanced Deep Learning models applied
+to diverse domains such as Natural Language Processing (NLP), Computer Vision, and Knowledge Graphs. My work
+combines data analysis, experimentation with cutting-edge models (GNNs, Transformers, etc.), and the development
+of intelligent systems. Backed by a rigorous engineering background and multiple experiences in applied research, I
+aim to pursue a PhD to actively contribute to scientific progress in AI, by exploring its wide range of applications and
+deepening the methodological and experimental foundations of learning models. </p>
         
         <div class="box-container">
             <div class="box">
-              <p><span> email : </span> ibrahim.mechouat@uir.ac.ma</p>
+              <p><span> email : </span> brahim.mechaouat@gmail.com</p>
               <p><span> place : </span> Rabat, Morocco. </p>
             </div>
         </div>
         
-        <div class="resumebtn">
-          <!-- Hidden Checkbox to Control Toggle -->
-          <input type="checkbox" id="toggleCV" class="toggle-checkbox" />
-        
-          <!-- Label that Looks Like a Button -->
-          <label for="toggleCV" class="btn">
-            <span>Resume</span>
-            <i class="fas fa-chevron-right"></i>
-          </label>
-        
-          <!-- Hidden Buttons for CV Options -->
-          <div class="cv-options">
-            <a href="https://drive.google.com/file/d/1DQ5VjMEaS_XmEh-gkBZ5jhQjUNVmsdzD/view?usp=sharing" target="_blank" class="btn"><span>Frensh</span></a>
-            <a href="https://drive.google.com/file/d/1xORqCXMluPt89JrxViZI-WxxFSyhV0cX/view?usp=sharing" target="_blank" class="btn"><span>English</span></a>
-          </div>
-        </div>
+<div class="resumebtn">
+  <p class="cv-blurb">
+    View my resume in your preferred language. Dive into my academic path, projects, and technical journey.
+  </p>
 
-    </div>
-    </div>
+  <input type="checkbox" id="toggleCV" class="toggle-checkbox" />
+
+  <label for="toggleCV" class="btn">
+    <span><i class="fas fa-file-alt"></i> Resume</span>
+    <i class="fas fa-chevron-down"></i>
+  </label>
+
+  <div class="cv-options">
+    <a href="https://drive.google.com/file/d/1JrdgYY0ICSzA7D9MgLADpYNKoAhWLIaw/view?usp=sharing" target="_blank" class="btn">
+      <i class="fas fa-flag"></i> French CV
+    </a>
+    <a href="https://drive.google.com/file/d/1ndxMMQ45GBNpBk9mL4exxEKKlCQi-bqg/view?usp=sharing" target="_blank" class="btn">
+      <i class="fas fa-globe"></i> English CV
+    </a>
+  </div>
+</div>
 </section>
 
 
 <section class="projects" id="projects">
   <h2 class="heading"><i class="fas fa-laptop-code"></i> My <span>Projects</span></h2>
-  
-  <div class="project-container">
-    <!-- JavaScript will insert the project cards here dynamically -->
+
+<div class="card-stack">
+  <!-- Cards injected here dynamically by JS -->
+</div>
+
+
+  <div class="view-all-btn">
+    <a href="https://github.com/STALPHA2708" target="_blank" class="btn view-all">View All Projects on GitHub</a>
   </div>
-    <!-- View All Projects Button -->
-    <div class="view-all-btn">
-      <a href="https://github.com/brahex123" target="_blank" class="btn view-all">View All Projects on GitHub</a>
-    </div>
+    <p class="cv-blurb">
+    Click to view my projects on GitHub. Explore my work in AI, Data Science, and more.
+  </p>
 </section>
+
 
 
 
@@ -140,57 +145,74 @@
 
   <div class="timeline">
 
-      <div class="container left">
-        <div class="content">
-          <div class="tag">
-            <h2>TICLab, Université Internationale de Rabat</h2>
-          </div>
-          <div class="desc">
-            <h3>Développeuse Chatbot Médical</h3>
-            <p>Juin 2023 - Août 2023</p>
-            <ul>
-              <li>Developed a medical consultation chatbot using natural language processing (NLP) techniques.</li>
-              <li>Created a Darija-to-English translation model deployed on Hugging Face, improving accessibility for Moroccan users.</li>
-            </ul>
-          </div>
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2>LORIA (Université de Lorraine) & TICLab, UIR</h2>
+        </div>
+        <div class="desc">
+          <h3>Research Intern – Biomedical Knowledge Graphs</h3>
+          <p>Mars 2025 - Août 2025</p>
+          <ul>
+            <li>Designed a biomedical knowledge graph using datasets like PharmKG and BioKG.</li>
+            <li>Implemented advanced GNNs (GCN, R-GCN, HRGAT) with ChemicalBERT and ProtBERT embeddings.</li>
+            <li>Focused on predicting drug–side effect relations through graph message passing studies.</li>
+          </ul>
         </div>
       </div>
-      
-      <div class="container right">
-        <div class="content">
-          <div class="tag">
-            <h2>Confidentiel</h2>
-          </div>
-          <div class="desc">
-            <h3>Stagiaire en Développement de DataMart</h3>
-            <p>Janvier 2024 - Avril 2024</p>
-            <ul>
-              <li>Designed a DataMart for sales tracking, integrating dimensions such as time, products, and clients.</li>
-              <li>Automated ETL (extraction, transformation, loading) processes to enhance data accessibility for decision-making reports.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <div class="container left">
-        <div class="content">
-          <div class="tag">
-            <h2>Département SI, Redal</h2>
-          </div>
-          <div class="desc">
-            <h3>Stagiaire en Reseau et Sécurité</h3>
-            <p>Mai 2024 - Juin 2024</p>
-            <ul>
-              <li>Maintained the company's IT network, troubleshooting issues and upgrading staff hardware.</li>
-              <li>Assisted in optimizing and deploying a field personnel application.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
+    </div>
 
-</div> -->
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>TICLab, Université Internationale de Rabat</h2>
+        </div>
+        <div class="desc">
+          <h3>AI Developer – Medical Chatbot Project</h3>
+          <p>Juin 2024 - Août 2024</p>
+          <ul>
+            <li>Developed a multilingual healthcare chatbot with NLP and Darija-to-English translation.</li>
+            <li>Integrated MarianMT and BERT models to enhance medical query understanding.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2>Confidentiel</h2>
+        </div>
+        <div class="desc">
+          <h3>Data Engineering Intern</h3>
+          <p>Janvier 2024 - Mars 2024</p>
+          <ul>
+            <li>Built a commercial DataMart for monitoring key sales indicators.</li>
+            <li>Automated ETL pipelines using Talend and developed Power BI dashboards.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>Redal – Département SI</h2>
+        </div>
+        <div class="desc">
+          <h3>Network Security Intern</h3>
+          <p>Juin 2023 - Juillet 2023</p>
+          <ul>
+            <li>Provided IT support and contributed to internal network optimization.</li>
+            <li>Reinforced cybersecurity practices in operational contexts.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
+
 
 <!-- experience section ends -->
 
@@ -256,8 +278,9 @@
 
       <div class="box">
           <h3>contact info</h3>
-          <p> <i class="fas fa-phone"></i>+212 6-82-40-34-66</p>
-          <p> <i class="fas fa-envelope"></i>ibrahim.mechouat@uir.ac.ma</p>
+          <p> <i class="fas fa-phone"></i>+212 7-08-03-23-44</p>
+          <p> <i class="fas fa-phone"></i>+33 6-51-74-23-22</p>
+          <p> <i class="fas fa-envelope"></i>brahim.mechaouat@gmail.com</p>
           <p> <i class="fas fa-map-marked-alt"></i>Rabat, Morocco.</p>
           <div class="share">
 
